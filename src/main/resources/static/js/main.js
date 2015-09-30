@@ -17,7 +17,7 @@ angular.module('sscce', ['ngRoute']).config(function ($routeProvider) {
         }).success(function (data) {
           $location.path("upload")
         }).error(function (data) {
-          console.log("error")
+          window.alert(data);
         })
       }
     }
